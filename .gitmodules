@@ -1,3 +1,0 @@
-[submodule "waybar"]
-	path = waybar
-	url = git@github.com:sejjy/mechabar
