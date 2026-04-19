@@ -1,23 +1,14 @@
 {
+  "include": [
+    "modules/left.jsonc",
+    "modules/right.jsonc",
+    "modules/center.jsonc",
+  ],
   "layer": "top",
-  "mod": "dock",
+  "mode": "dock",
   "height": "16px",
 
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces", "cpu"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["clock"],
-  "clock": {
-    "format-alt": "{:%a, %d. %b  %H:%M}",
-  },
-  "hyprland/workspaces": {
-    "format": "{windows}",
-    "workspace-taskbar": {
-      "enable": true,
-      "update-active-window": "true",
-      "format": "{icon}",
-    },
-  },
-  "hyprland/window": {
-    "format": "{title}",
-  },
+  "modules-right": ["idle_inhibitor", "clock"],
 }

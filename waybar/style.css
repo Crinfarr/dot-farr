@@ -3,6 +3,7 @@
 @define-color Mantle rgb(24,24,37);
 @define-color Crust rgb(17,17,27);
 @define-color Text rgb(205,214,244);
+
 * {
     font-family: "JetBrains Mono Nerd Font Propo";
     font-size: 16px;
@@ -19,4 +20,10 @@ window#waybar {
 #workspaces button.active {
     border: 2px solid @Mauve;
     border-radius: 0px;
+}
+#clock {
+    padding: 0px 10px;
+}
+#cpu {
+    padding: 0px 10px;
 }

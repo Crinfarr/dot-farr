@@ -1,0 +1,22 @@
+{
+  "clock": {
+    "format-alt": "{:%F %H:%M}",
+    "tooltip-format": "<span color='#cdd6f4'>{calendar}</span>",
+    "actions": {
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down",
+    },
+    "calendar": {
+      "format": {
+        "today": "<span background='#cba6f7' color='#1e1e2e'>{}</span>",
+      },
+    },
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "<span color='#cba6f7'></span><span background='#cba6f7' color='#1e1e2e'>󰅶</span><span color='#cba6f7'></span>",
+      "deactivated": "<span color='#cdd6f4'></span><span color='#1e1e2e' background='#cdd6f4'>󰾪</span><span color='#cdd6f4'></span>",
+    },
+  },
+}
