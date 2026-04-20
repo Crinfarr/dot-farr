@@ -1,3 +1,10 @@
 import Quickshell
-import Quickshell.Hyprland
 import QtQuick
+import Quickshell.Hyprland
+import "modules"
+
+ShellRoot {
+    id: root
+
+    Bar {}
+}
