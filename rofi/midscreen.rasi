@@ -1,0 +1,10 @@
+configuration {
+    run {
+        display-name: " ";
+    }
+    window {
+        display-name: " ";
+    }
+}
+@theme "~/.config/rofi/theme/globaltheme.rasi"
+@import "~/.config/rofi/theme/popup.rasi"

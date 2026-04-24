@@ -1,0 +1,52 @@
+configuration {
+    run {
+        display-name: " ";
+    }
+    window {
+        display-name: " ";
+    }
+}
+@theme "~/.config/rofi/theme/globaltheme.rasi"
+window {
+    width: 100%;
+    height: 30em;
+}
+mainbox {
+    background-color: transparent;
+    spacing: 1em;
+    children: [
+        listview
+    ];
+}
+
+element {
+    border-radius: 5mm;
+    children: [element-icon];
+}
+element-icon {
+    expand: true;
+    size: 10mm;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    padding: 5mm;
+}
+
+listview {
+    padding: 3em;
+    dynamic: false;
+    lines: 0;
+    columns: 5;
+    flow: horizontal;
+}
+entry {
+    background-color: transparent;
+}
+
+element selected normal {
+    background-color: #ff00ff;
+}
+//TODO FINISH
+//fetch ids of windows from hypr as `hyprctl -j clients | jq .stableId`
+//screenshot with grim -T (id)
+//pass to rofi-dmenu with `echo -en "$name\0icon\x1f$iconfile\n"`
+//will output $name when selected

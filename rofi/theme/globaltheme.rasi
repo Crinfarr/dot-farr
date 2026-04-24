@@ -1,0 +1,94 @@
+* {
+    CROSEWATER:  rgb(245,224,220);
+    CFLAMINGO:  rgb(242,205,205);
+    CPINK:  rgb(245,194,231);
+    CMAUVE:  rgb(203,166,247);
+    CRED:  rgb(243,139,168);
+    CMAROON:  rgb(235,160,172);
+    CPEACH:  rgb(250,179,135);
+    CYELLOW:  rgb(249,226,175);
+    CGREEN:  rgb(166,227,161);
+    CTEAL:  rgb(148,226,213);
+    CSKY:  rgb(137,220,235);
+    CSAPPHIRE:  rgb(116,199,236);
+    CBLUE:  rgb(137,180,250);
+    CLAVENDER:  rgb(180,190,254);
+    CTEXT:  rgb(205,214,244);
+    CSUBTEXT1:  rgb(186,194,222);
+    CSUBTEXT0:  rgb(166,173,200);
+    COVERLAY2:  rgb(147,153,178);
+    COVERLAY1:  rgb(127,132,156);
+    COVERLAY0:  rgb(108,112,134);
+    CSURFACE2:  rgb(88,91,112);
+    CSURFACE1:  rgb(69,71,90);
+    CSURFACE0:  rgb(49,50,68);
+    CBASE:  rgb(30,30,46);
+    CMANTLE:  rgb(24,24,37);
+    CCRUST:  rgb(17,17,27);
+    text-color: var(CTEXT);
+    background-color: var(CMANTLE);
+}
+window {
+    border:     0px 2px 0px 0px ;
+    text-color: var(CTEXT);
+    background-color: transparent;
+}
+mode-switcher {
+    padding:          4px ;
+    background-color: var(CMANTLE);
+    border:           2px 0px 0px ;
+}
+button selected {
+    border-color: var(CGREEN);
+    text-color:   var(CGREEN);
+}
+inputbar {
+    padding:          4px ;
+    background-color: var(CMANTLE);
+    text-color:       var(CGREEN);
+    border:           0px 0px 2px ;
+}
+mainbox {
+    background-color: var(CCRUST);
+    expand:           true;
+    spacing:          1.0000em ;
+}
+listview {
+    padding: 0.0000em 0.4000em 0.0000em 1.0000em ;
+    dynamic: false;
+    lines:   0;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element selected.normal {
+    background-color: var(CBLUE);
+}
+element selected.active {
+    background-color: var(CSKY);
+    text-color:       var(CCRUST);
+}
+element selected.urgent {
+    background-color: var(CPINK);
+    text-color:       var(CCRUST);
+}
+element normal.active {
+    text-color: var(CSKY);
+}
+element normal.urgent {
+    text-color: var(CPINK);
+}
+element alternate.active {
+    text-color: var(CSKY);
+}
+element alternate.urgent {
+    text-color: var(CPINK);
+}
+error-message {
+    padding:          1.0000em ;
+    background-color: var(CRED);
+    expand:           true;
+    border-color:     var(CRED);
+    border:           2px ;
+}

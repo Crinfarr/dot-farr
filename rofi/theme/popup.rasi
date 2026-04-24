@@ -1,0 +1,6 @@
+window {
+    width:      32.0000 em ;
+    height:     18.0000 em ;
+    location:   center;
+    anchor:     center;
+}
