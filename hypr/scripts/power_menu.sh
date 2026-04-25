@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-case $(echo -e "Lock\nShutdown\nRestart" | rofi -dmenu -config ~/.config/rofi/pwrmenu.rasi -p "󰐥 ") in
+case $(echo -e "Lock\nShutdown\nRestart" | rofi -dmenu -config ~/.config/rofi/midscreen.rasi -p "󰐥 ") in
     Lock)
         hyprlock
         ;;
