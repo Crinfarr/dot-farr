@@ -15,11 +15,13 @@
 * Grim [pacman](https://archlinux.org/packages/extra/x86_64/grim/)
 * * Required for SUPER+SHIFT+S screenshot to work
 * wl-clipboard [pacman](https://archlinux.org/packages/extra/x86_64/wl-clipboard/)
-* * Required for SUPER+SHIFT+S screenshot to work
+* * Required for SUPER+SHIFT+S screenshot and SUPER+V clipboard history to work
 * pavucontrol-qt [pacman](https://archlinux.org/packages/extra/x86_64/pavucontrol-qt/)
 * * Required for SUPER+SHIFT+V volume mixer
 * Rofi [pacman](https://archlinux.org/packages/extra/x86_64/rofi/)
 * * Required for SUPER, SUPER+., and CTRL+ALT+DELETE to work
+* ClipHist [pacman](https://archlinux.org/packages/extra/x86_64/cliphist/)
+* * Required for SUPER+V clipboard history
 ### Recommended programs (You can set these to your personal preference in hypr/programs.conf)
 * Kitty ($term) [pacman](https://archlinux.org/packages/extra/x86_64/kitty/)
 * Dolphin ($files) [pacman](https://archlinux.org/packages/extra/x86_64/dolphin/)

@@ -1,0 +1,2 @@
+@theme "~/.config/rofi/theme/globaltheme.rasi"
+@import "~/.config/rofi/theme/bar/bar_top.rasi"
