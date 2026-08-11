@@ -1,5 +1,5 @@
 TERMINAL = "kitty"
-FILES = "dolphin"
+FILES = "kitty yazi"
 SETTINGS = "systemsettings"
 hl.on("hyprland.start", function()
     hl.exec_cmd("hyprlauncher -d")

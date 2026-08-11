@@ -24,7 +24,7 @@
 * * Required for SUPER+V clipboard history
 ### Recommended programs (You can set these to your personal preference in hypr/programs.conf)
 * Kitty ($term) [pacman](https://archlinux.org/packages/extra/x86_64/kitty/)
-* Dolphin ($files) [pacman](https://archlinux.org/packages/extra/x86_64/dolphin/)
+* [Yazi ($files) [pacman](https://archlinux.org/packages/extra/x86_64/yazi/)
 * KDE System Settings ($settings) [pacman](https://archlinux.org/packages/extra/x86_64/systemsettings/)
 
 ## Shortcuts
