@@ -15,7 +15,11 @@ hl.bind("SUPER + Tab", hl.dsp.exec_cmd("rofi -show window -config ~/.config/rofi
 hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("pavucontrol-qt"))
 -- script shortcuts
-hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("sh ~/.config/hypr/scripts/screenshot.sh"))
+hl.bind("SUPER + SHIFT + S", function()
+    DISABLE_ANIMATIONS()
+    hl.exec_cmd("sh ~/.config/hypr/scripts/screenshot.sh")
+    ENABLE_ANIMATIONS()
+end)
 hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd("sh ~/.config/hypr/scripts/power_menu.sh"))
 hl.bind("SUPER + V", hl.dsp.exec_cmd("sh ~/.config/hypr/scripts/clip-history.sh"))
 -- window interaction
