@@ -17,16 +17,16 @@ hl.monitor({
 })
 
 hl.monitor({
-    output = "DP-5",
+    output = "desc:Acer Technologies XV272U V3 A421056D43LIJ",
     mode = "2560x1440",
     bitdepth = 10,
-    position = "0x0",
+    position = "auto",
 })
 hl.monitor({
-    output = "DP-6",
+    output = "desc:Acer Technologies XV272U V3 A421056D53LIJ",
     mode = "2560x1440",
     bitdepth = 10,
-    position = "2560x0"
+    position = "auto-right"
 })
 hl.config({
     render = {
