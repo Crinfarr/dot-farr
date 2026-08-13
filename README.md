@@ -22,6 +22,8 @@
 * * Required for SUPER, SUPER+., and CTRL+ALT+DELETE to work
 * ClipHist [pacman](https://archlinux.org/packages/extra/x86_64/cliphist/)
 * * Required for SUPER+V clipboard history
+* ffmpeg [pacman](https://archlinux.org/packages/extra/x86_64/ffmpeg/)
+* * Required for automatic wallpaper spanning
 ### Recommended programs (You can set these to your personal preference in hypr/programs.conf)
 * Kitty ($term) [pacman](https://archlinux.org/packages/extra/x86_64/kitty/)
 * [Yazi ($files) [pacman](https://archlinux.org/packages/extra/x86_64/yazi/)
