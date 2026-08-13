@@ -6,6 +6,7 @@ require(HYPR_CONF_DIR .. "monitors")
 require(HYPR_CONF_DIR .. "programs")
 -- general env config
 require(HYPR_CONF_DIR .. "style/theme")
+require(HYPR_CONF_DIR .. "style/wallpaper")
 require(HYPR_CONF_DIR .. "env")
 -- permission config
 require(HYPR_CONF_DIR .. "permissions")

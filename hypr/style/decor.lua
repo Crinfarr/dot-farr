@@ -28,7 +28,6 @@ hl.config({
 hl.on("hyprland.start", function()
     hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme \"prefer-dark\"")
     hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme \"adw-gtk3\"")
-    hl.exec_cmd("hyprpaper")
     hl.exec_cmd("waybar")
     hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 end)
