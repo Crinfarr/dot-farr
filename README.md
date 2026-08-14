@@ -9,7 +9,7 @@
 * Quickshell [pacman](https://archlinux.org/packages/extra/x86_64/quickshell/)
 * * Optional now, maybe not later
 * Hyprlock [pacman](https://archlinux.org/packages/extra/x86_64/hyprlock/)
-* * Required for SUPER+L lock and rofi power menu to work
+* * Required for SUPER+L lock and rofi power menu lock to work
 * Wayfreeze [aur](https://aur.archlinux.org/packages/wayfreeze-git)
 * * Required for SUPER+SHIFT+S screenshot to work
 * Grim [pacman](https://archlinux.org/packages/extra/x86_64/grim/)

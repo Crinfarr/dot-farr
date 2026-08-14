@@ -37,7 +37,7 @@ local function gen_spanning_wp(path)
     filtergraph = filtergraph .. ';'
     for _, rect in ipairs(monitor_rects) do
         filtergraph = filtergraph ..
-        string.format("[%s]crop=x=%s:y=%s:w=%s:h=%s[%s.o];", rect.name, rect.x, rect.y, rect.w, rect.h, rect.name)
+            string.format("[%s]crop=x=%s:y=%s:w=%s:h=%s[%s.o];", rect.name, rect.x, rect.y, rect.w, rect.h, rect.name)
     end
     local command = string.format("ffmpeg -i %s -filter_complex %q ", path, filtergraph)
     for _, rect in ipairs(monitor_rects) do
@@ -48,13 +48,19 @@ local function gen_spanning_wp(path)
     local _ = run:read("a")
     run:close()
     for _, rect in ipairs(monitor_rects) do
-        hl.exec_cmd(string.format("hyprctl hyprpaper wallpaper '%s, ~/.config/hypr/run/wallpaper.%s.jxl, fill'", rect.name, rect.name))
+        hl.exec_cmd(string.format("hyprctl hyprpaper wallpaper '%s, ~/.config/hypr/run/wallpaper.%s.jxl, fill'",
+            rect.name, rect.name))
     end
 end
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("hyprpaper")
-    gen_spanning_wp("~/.config/hypr/wallpaper.jxl")
+    hl.timer(function()
+        gen_spanning_wp("~/.config/hypr/wallpaper.jxl")
+    end, {
+        timeout = 3,
+        type = "oneshot"
+    })
 end)
 hl.on("config.reloaded", function()
     gen_spanning_wp("~/.config/hypr/wallpaper.jxl")
