@@ -24,10 +24,11 @@
 * * Required for SUPER+V clipboard history
 * ffmpeg [pacman](https://archlinux.org/packages/extra/x86_64/ffmpeg/)
 * * Required for automatic wallpaper spanning
-### Recommended programs (You can set these to your personal preference in hypr/programs.conf)
-* Kitty ($term) [pacman](https://archlinux.org/packages/extra/x86_64/kitty/)
-* [Yazi ($files) [pacman](https://archlinux.org/packages/extra/x86_64/yazi/)
-* KDE System Settings ($settings) [pacman](https://archlinux.org/packages/extra/x86_64/systemsettings/)
+### Recommended programs (You can set these to your personal preference in hypr/programs.lua)
+* Kitty (global TERMINAL) [pacman](https://archlinux.org/packages/extra/x86_64/kitty/)
+* [Yazi (global FILES) [pacman](https://archlinux.org/packages/extra/x86_64/yazi/)
+* KDE System Settings (global SETTINGS) [pacman](https://archlinux.org/packages/extra/x86_64/systemsettings/)
+* Dunst (global NOTIFIER) [pacman](https://archlinux.org/packages/extra/x86_64/dunst/)
 
 ## Shortcuts
 I put in most of the shortcuts I use often and update this every time I realize I forgot one.
