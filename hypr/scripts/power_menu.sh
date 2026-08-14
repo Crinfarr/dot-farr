@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-case $(echo -e "Lock\nShutdown\nRestart" | rofi -dmenu -config ~/.config/rofi/midscreen.rasi -p "󰐥 ") in
+case $(echo -e "Logout\nLock\nShutdown\nRestart" | rofi -dmenu -config ~/.config/rofi/midscreen.rasi -p "󰐥 ") in
+    Logout)
+        hyprctl dispatch 'hl.dsp.exit()'
+        ;;
     Lock)
         hyprlock
         ;;
