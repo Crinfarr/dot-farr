@@ -55,13 +55,11 @@ end
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("hyprpaper")
-    hl.timer(function()
-        gen_spanning_wp("~/.config/hypr/wallpaper.jxl")
-    end, {
-        timeout = 3,
-        type = "oneshot"
-    })
 end)
-hl.on("config.reloaded", function()
-    gen_spanning_wp("~/.config/hypr/wallpaper.jxl")
+WALLPAPER_GENERATED = false
+hl.on("layer.opened", function(layer)
+    if layer.namespace == "hyprpaper" and not WALLPAPER_GENERATED then
+        gen_spanning_wp("~/.config/hypr/wallpaper.jxl")
+        WALLPAPER_GENERATED = true
+    end
 end)
