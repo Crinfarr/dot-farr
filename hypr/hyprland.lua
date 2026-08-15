@@ -15,6 +15,7 @@ require(HYPR_CONF_DIR .. "style/tiling")
 require(HYPR_CONF_DIR .. "style/decor")
 require(HYPR_CONF_DIR .. "style/animation")
 require(HYPR_CONF_DIR .. "rules/window-rules")
+require(HYPR_CONF_DIR .. "rules/workspace-rules")
 --layout config
 require(HYPR_CONF_DIR .. "rules/layout/dwindle")
 require(HYPR_CONF_DIR .. "rules/layout/master")
