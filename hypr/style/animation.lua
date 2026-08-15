@@ -14,6 +14,9 @@ function DISABLE_ANIMATIONS()
     })
 end
 function ENABLE_ANIMATIONS()
+    hl.config({
+        animations = {enabled = true}
+    })
     -- default to none
     -- hl.animation({
     --     leaf = "global",
