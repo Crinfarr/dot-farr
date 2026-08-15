@@ -35,3 +35,41 @@ hl.window_rule({
     workspace = "special:overlay_panel",
     no_blur = true
 })
+local function hide_steam_on_game_launch(w)
+    if not string.find(w.class, "steam_app_") then
+        return
+    end
+    local steam_windows = hl.get_windows({
+        class = "steam"
+    })
+    assert(steam_windows, "somehow opened a steam game without opening steam")
+    for _, window in ipairs(steam_windows) do
+        hl.dispatch(hl.dsp.window.move({
+            workspace = "special:steam_holder",
+            follow = false,
+            window = window
+        }))
+    end
+end
+local function show_steam_on_game_close(w)
+    if not string.find(w.class, "steam_app_") then
+        return
+    end
+    local steam_windows = hl.get_windows({
+        class = "steam"
+    })
+    assert(steam_windows, "somehow opened a steam game without opening steam")
+    local workspace = hl.get_active_workspace()
+    for _, window in ipairs(steam_windows) do
+        hl.dispatch(hl.dsp.window.move({
+            workspace = workspace,
+            window = window,
+        }))
+    end
+end
+hl.on("window.class", function(w)
+    hide_steam_on_game_launch(w)
+end)
+hl.on("window.close", function(w)
+    show_steam_on_game_close(w)
+end)
