@@ -35,6 +35,21 @@ hl.window_rule({
     workspace = "special:overlay_panel",
     no_blur = true
 })
+hl.window_rule({
+    name = "open_spotify_on_scratch",
+    match = {
+        class = "Spotify"
+    },
+    workspace = "special:scratch"
+})
+hl.window_rule({
+    name = "open_discord_on_scratch",
+    match = {
+        class = "discord"
+    },
+    workspace = "special:scratch"
+})
+
 local function hide_steam_on_game_launch(w)
     if not string.find(w.class, "steam_app_") then
         return
