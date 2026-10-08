@@ -1,4 +1,6 @@
-HYPR_CONF_DIR = "";
+HYPR_CONF_DIR = "~/.config/hypr/";
+-- useful global functions
+require(HYPR_CONF_DIR .. "functions")
 
 -- monitor config
 require(HYPR_CONF_DIR .. "monitors")

@@ -41,14 +41,14 @@ local function gen_spanning_wp(path)
     end
     local command = string.format("ffmpeg -i %s -filter_complex %q ", path, filtergraph)
     for _, rect in ipairs(monitor_rects) do
-        command = command .. string.format("-map '[%s.o]' ~/.config/hypr/run/wallpaper.%s.jxl ", rect.name, rect.name)
+        command = command .. string.format("-map '[%s.o]' ".. HYPR_CONF_DIR .. "run/wallpaper.%s.jxl ", rect.name, rect.name)
     end
     local run, e = io.popen(string.format("yes | %s", command))
     assert(run, e)
     local _ = run:read("a")
     run:close()
     for _, rect in ipairs(monitor_rects) do
-        hl.exec_cmd(string.format("hyprctl hyprpaper wallpaper '%s, ~/.config/hypr/run/wallpaper.%s.jxl, fill'",
+        hl.exec_cmd(string.format("hyprctl hyprpaper wallpaper '%s, ".. HYPR_CONF_DIR .. "run/wallpaper.%s.jxl, fill'",
             rect.name, rect.name))
     end
 end
@@ -59,7 +59,7 @@ end)
 WALLPAPER_GENERATED = false
 hl.on("layer.opened", function(layer)
     if layer.namespace == "hyprpaper" and not WALLPAPER_GENERATED then
-        gen_spanning_wp("~/.config/hypr/wallpaper.jxl")
+        gen_spanning_wp(HYPR_CONF_DIR .. "wallpaper.jxl")
         WALLPAPER_GENERATED = true
     end
 end)
