@@ -3,32 +3,37 @@
 
 ## Prerequisites (to use everything)
 * Hyprland [pacman](https://archlinux.org/packages/extra/x86_64/hyprland/)
-* * **Required**
+
+**Required**
+
 * Waybar (Migrating to quickshell soon™) [pacman](https://archlinux.org/packages/extra/x86_64/waybar/)
-* * Required for top bar
-* Quickshell [pacman](https://archlinux.org/packages/extra/x86_64/quickshell/)
-* * Optional now, maybe not later
+  * Required for top bar
 * Hyprlock [pacman](https://archlinux.org/packages/extra/x86_64/hyprlock/)
-* * Required for SUPER+L lock and rofi power menu lock to work
+  * Required for SUPER+L lock and rofi power menu lock to work
 * Wayfreeze [aur](https://aur.archlinux.org/packages/wayfreeze-git)
-* * Required for SUPER+SHIFT+S screenshot to work
+  * Required for SUPER+SHIFT+S screenshot to work
 * Grim [pacman](https://archlinux.org/packages/extra/x86_64/grim/)
-* * Required for SUPER+SHIFT+S screenshot to work
+  * Required for SUPER+SHIFT+S screenshot to work
 * wl-clipboard [pacman](https://archlinux.org/packages/extra/x86_64/wl-clipboard/)
-* * Required for SUPER+SHIFT+S screenshot and SUPER+V clipboard history to work
+  * Required for SUPER+SHIFT+S screenshot and SUPER+V clipboard history to work
 * pavucontrol-qt [pacman](https://archlinux.org/packages/extra/x86_64/pavucontrol-qt/)
-* * Required for SUPER+SHIFT+V volume mixer
+  * Required for SUPER+SHIFT+V volume mixer
 * Rofi [pacman](https://archlinux.org/packages/extra/x86_64/rofi/)
-* * Required for SUPER, SUPER+., and CTRL+ALT+DELETE to work
+  * Required for SUPER, SUPER+., and CTRL+ALT+DELETE to work
 * ClipHist [pacman](https://archlinux.org/packages/extra/x86_64/cliphist/)
-* * Required for SUPER+V clipboard history
+  * Required for SUPER+V clipboard history
 * ffmpeg [pacman](https://archlinux.org/packages/extra/x86_64/ffmpeg/)
-* * Required for automatic wallpaper spanning
-### Recommended programs (You can set these to your personal preference in hypr/programs.lua)
-* Kitty (global TERMINAL) [pacman](https://archlinux.org/packages/extra/x86_64/kitty/)
-* [Yazi (global FILES) [pacman](https://archlinux.org/packages/extra/x86_64/yazi/)
-* KDE System Settings (global SETTINGS) [pacman](https://archlinux.org/packages/extra/x86_64/systemsettings/)
-* Dunst (global NOTIFIER) [pacman](https://archlinux.org/packages/extra/x86_64/dunst/)
+  * Required for automatic wallpaper spanning
+### Recommended programs
+(You can set these to your personal preference in hypr/programs.lua)
+
+* Kitty (global `TERMINAL`) [pacman](https://archlinux.org/packages/extra/x86_64/kitty/)
+* [Yazi (global `FILES`) [pacman](https://archlinux.org/packages/extra/x86_64/yazi/)
+* KDE System Settings (global `SETTINGS`) [pacman](https://archlinux.org/packages/extra/x86_64/systemsettings/)
+* Dunst (global `NOTIFIER`) [pacman](https://archlinux.org/packages/extra/x86_64/dunst/)
+* librespot (Can be disabled by changing `USE_LIBRESPOT` to `false` in programs.lua) [crates.io](https://crates.io/crates/librespot)
+  * Also provides official packages for several distros
+  * Starts a spotify endpoint on this computer when your session starts, so you can stream to it without using the bloated ass spotify electron app
 
 ## Shortcuts
 I put in most of the shortcuts I use often and update this every time I realize I forgot one.
