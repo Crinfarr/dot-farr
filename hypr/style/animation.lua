@@ -65,4 +65,4 @@ function ENABLE_ANIMATIONS()
         bezier = "cubic"
     })
 end
-ENABLE_ANIMATIONS()
+DISABLE_ANIMATIONS()
