@@ -9,7 +9,7 @@ hl.config({
 hl.bind("SUPER + Return", hl.dsp.exec_cmd(TERMINAL))
 hl.bind("SUPER + E", hl.dsp.exec_cmd(FILES))
 hl.bind("SUPER + I", hl.dsp.exec_cmd(SETTINGS))
-hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd("rofi -show drun -p \"󰌧 \""))
+hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd("rofi -show drun -p \"󰌧 \""), {release = true})
 hl.bind("SUPER + R", hl.dsp.exec_cmd("rofi -show run -config ~/.config/rofi/midscreen.rasi"))
 hl.bind("SUPER + Tab", hl.dsp.exec_cmd("rofi -show window -config ~/.config/rofi/midscreen.rasi"))
 hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
