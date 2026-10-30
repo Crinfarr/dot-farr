@@ -8,11 +8,34 @@ hl.workspace_rule({
     no_border = true,
     animation = "slidevert"
 })
+-- Work monitors
+if (GetHostname() == "apotech-null1") then
 hl.workspace_rule({
-    workspace = "0",
-    monitor = "DP-5"
+    workspace = "1",
+    monitor = "desc:Hewlett Packard HP E222 CNK53312QV",
+    default = true
 })
 hl.workspace_rule({
-    workspace = "10",
-    monitor = "DP-6"
+    workspace = "2",
+    monitor = "desc:Hewlett Packard HP E222 CNK53312QC",
+    default = true
 })
+hl.workspace_rule({
+    workspace = "3",
+    monitor = "desc:Hewlett Packard HP E222 CNK53312Q9",
+    default = true
+})
+else
+-- Home monitors
+-- TODO add hostname filter for this too
+hl.workspace_rule({
+    workspace = "1",
+    monitor = "desc:Acer Technologies XV272U V3 A421056D43LIJ",
+    default = true
+})
+hl.workspace_rule({
+    workspace = "2",
+    monitor = "desc:Acer Technologies XV272U V3 A421056D53LIJ",
+    default = true
+})
+end
