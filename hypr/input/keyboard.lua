@@ -47,3 +47,8 @@ hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"))
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"))
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"))
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"))
+-- other shortcuts
+local DISPLAYS_ARE_ENABLED = true
+hl.bind("CTRL + SUPER + ALT + Delete", function()
+    hl.dispatch(hl.dsp.dpms({action = "toggle"}))
+end)

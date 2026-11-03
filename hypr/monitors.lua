@@ -17,7 +17,8 @@ if (GetHostname() == "apotech-null1") then
         position = "auto-center-left",
         transform = 1
     })
-else
+end
+if (GetHostname() == "apex-17") then
     -- My home monitors for second example
     -- TODO add hostname filter for this too
     hl.monitor({
@@ -37,7 +38,7 @@ else
             direct_scanout = 2
         }
     })
-    hl.on("hyprland.start", function()
-        hl.exec_cmd("hyprsunset")
-    end)
 end
+hl.on("hyprland.start", function()
+    hl.exec_cmd("hyprsunset")
+end)
